@@ -1,5 +1,9 @@
 .App {
-  text-align: center;
+  text-align: left;
+}
+
+nav{
+  padding: 20px;
 }
 
 .App-logo {
@@ -14,7 +18,9 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background: #34e89e;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #0f3443, #34e89e);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #0f3443, #34e89e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -24,9 +30,11 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.entrada{
+  float: left;
+  width: 100%;
 }
+
 
 @keyframes App-logo-spin {
   from {

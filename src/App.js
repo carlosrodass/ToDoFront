@@ -1,25 +1,25 @@
-import logo from './logo.svg';
 import './App.css';
+import { Component } from 'react';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import InputTodo from './components/InputTodo';
+import { todos } from './todos.json';
+console.log(todos);
+
+class App extends Component {
+  render() {
+    return (
+      <div className="App container">
+        <div className="mt-5">
+          <a href="https://www.linkedin.com/in/carlos-rodas-65303a1a8/" className="text-black">
+            Developed by ARANEKO Rodas
+          </a>
+        </div>
+        <InputTodo></InputTodo>
+        {/* { todos } */}
+
+      </div>
+    )
+  }
 }
 
 export default App;

@@ -1,0 +1,28 @@
+{
+    "todos": [
+        {
+            "title": "Dormir",
+            "responable": "Mark",
+            "description": "Lorem ipsum 1",
+            "priority": "Low"
+        },
+        {
+            "title": "Leer libro",
+            "responable": "Carlos",
+            "description": "Lorem ipsum 2",
+            "priority": "Medium"
+        },
+        {
+            "title": "Ver television",
+            "responable": "Gabi",
+            "description": "Lorem ipsum 3",
+            "priority": "Low"
+        },
+        {
+            "title": "Comer",
+            "responable": "Aran",
+            "description": "Lorem ipsum 4",
+            "priority": "High"
+        }
+    ]
+}
