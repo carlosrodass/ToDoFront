@@ -1,4 +1,6 @@
 import React, { Fragment, useState } from 'react';
+import Button from '@material-ui/core/Button';
+import EditIcon from '@material-ui/icons/Edit';
 
 const EditTodo = ({ todo }) => {
 
@@ -25,7 +27,12 @@ const EditTodo = ({ todo }) => {
 
     return (
         <Fragment>
-            <button type="button" className="btn btn-info" data-toggle="modal" data-target={`#id${todo.id}`}>Edit</button>
+            <Button 
+               variant="contained"
+               color="default"
+               size="small"
+               startIcon={<EditIcon />}
+            data-target={`#id${todo.id}`}>Edit</Button>
 
             <div id={`#id${todo.id}`} className="modal fade" role="dialog">
 

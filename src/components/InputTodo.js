@@ -1,5 +1,11 @@
 import React, { Fragment, useState } from 'react';
 import ListTodo from './ListTodo';
+import Container from '@material-ui/core/Container';
+
+import Button from '@material-ui/core/Button';
+import { makeStyles } from '@material-ui/core/styles';
+import CloudUploadIcon from '@material-ui/icons/CloudUpload';
+
 
 const InputTodo = () => {
 
@@ -22,14 +28,20 @@ const InputTodo = () => {
 
   return (
     <Fragment>
-      <div className="container">
+      <Container maxWidth="md">
         <h1 className='mt-5'>Todo panel</h1>
         <form className="d-flex" onSubmit={onSubmitForm}>
           <input type="text" className="form-control" value={description} onChange={e => setDescription(e.target.value)} />
-          <button className="btn btn-success">Add</button>
+          <Button
+            variant="contained"
+            color="primary"
+            size="small"
+            startIcon={<CloudUploadIcon />}>
+            Add
+          </Button>
         </form>
         <ListTodo></ListTodo>
-      </div>
+      </Container>
     </Fragment>
   );
 }
